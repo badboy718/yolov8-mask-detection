@@ -25,6 +25,12 @@
 
 三组调参实验的 mAP@50 差距只有 1.2 个百分点。学习率降到 0.001 会欠拟合，关掉 Mosaic 会掉 0.74 个百分点。结论是继续调参的收益有限，后续更应该补数据。
 
+## 仓库地址
+
+```text
+git@github.com:badboy718/yolov8-mask-detection.git
+```
+
 ## 目录结构
 
 ```text
@@ -45,18 +51,15 @@ yolo_v8_project/
 ├── step4_tuning/
 │   ├── colab_tuning.py
 │   ├── compare_experiments.py
-│   ├── best.pt                  # 调参后的最优权重
-│   └── best.onnx                # 导出的 ONNX 模型
+│   └── best.pt                  # 调参后的最优权重
 ├── step5_deploy/
 │   ├── deploy_and_evaluate.py
-│   └── output/                  # 推理结果图
 ├── step6_web_demo/
 │   └── app.py
 │
 ├── data/                        # 数据集目录，仓库不包含
 └── 期末汇报_PPT/
     ├── 期末汇报_刘淏荣_姜瑞洋.pptx
-    ├── 期末汇报_刘淏荣_姜瑞洋_预览.pdf
     ├── 答辩发言稿_口语版.md
     └── 答辩QA_预测问题.md
 ```
@@ -140,11 +143,11 @@ Windows 也可以直接双击 `run_demo.bat`。
 
 仓库没有上传完整数据集，原因有两个：数据集体积较大，且原始数据有独立的下载来源。
 
-仓库保留了 `step4_tuning/best.pt` 和 `step4_tuning/best.onnx`，方便直接运行网页演示。`yolov8n.pt` 会在训练时由 Ultralytics 自动下载，也可以手动放到项目根目录。
+仓库保留了 `step4_tuning/best.pt`，方便直接运行网页演示。ONNX 模型不上传，需要时运行 `step5_deploy/deploy_and_evaluate.py` 重新导出。`yolov8n.pt` 会在训练时由 Ultralytics 自动下载，也可以手动放到项目根目录。
 
 ## 汇报材料
 
-PPT、预览 PDF、逐页发言稿和答辩 Q&A 都在 `期末汇报_PPT/` 目录。
+最终版 PPT、逐页发言稿和答辩 Q&A 都在 `期末汇报_PPT/` 目录。旧版和素材不上传。
 
 ## 已知不足
 

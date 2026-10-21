@@ -40,3 +40,11 @@ ppt_review/
 # ---------- 系统文件 ----------
 .DS_Store
 Thumbs.db
+
+# ---------- 仓库精简：不上传的过程材料 ----------
+step4_tuning/picture/
+step5_deploy/output/
+step4_tuning/best.onnx
+提交说明.md
+期末汇报_PPT/README.txt
+期末汇报_PPT/期末汇报_刘淏荣_姜瑞洋_预览.pdf
