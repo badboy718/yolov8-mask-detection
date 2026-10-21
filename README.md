@@ -28,6 +28,12 @@
 ## 仓库地址
 
 ```text
+https://github.com/badboy718/yolov8-mask-detection
+```
+
+SSH 克隆也可以：
+
+```text
 git@github.com:badboy718/yolov8-mask-detection.git
 ```
 
