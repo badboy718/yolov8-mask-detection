@@ -19,6 +19,8 @@ step4_tuning/*/weights/
 # ---------- Python ----------
 __pycache__/
 *.py[cod]
+# Ultralytics 生成的标签缓存，含本机绝对路径，可自动重建
+*.cache
 .venv/
 venv/
 .ipynb_checkpoints/
