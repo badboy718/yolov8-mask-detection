@@ -38,7 +38,6 @@ yolo_v8_project/
 ├── README.md
 ├── requirements.txt
 ├── run_demo.bat
-├── project_report.md
 ├── dataset.zip                  # 本地数据集压缩包，仓库不包含
 ├── yolov8n.pt                   # 预训练权重，仓库不包含
 │

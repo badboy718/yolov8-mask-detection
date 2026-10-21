@@ -37,6 +37,9 @@ package-lock.json
 期末汇报_PPT/generate_pptx_dark.js
 ppt_review/
 
+# ---------- 本地报告 ----------
+project_report.md
+
 # ---------- 系统文件 ----------
 .DS_Store
 Thumbs.db
