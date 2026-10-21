@@ -33,6 +33,10 @@ package-lock.json
 
 # ---------- PPT 临时文件与旧版 ----------
 ~$*.pptx
+# 本地备份/恢复版本，正式版仍用 期末汇报_PPT/期末汇报_刘淏荣_姜瑞洋.pptx
+期末汇报_PPT/*_备份.pptx
+期末汇报_PPT/*_恢复版.pptx
+期末汇报_PPT/*_终版.pptx
 期末汇报_PPT/旧版/
 期末汇报_PPT/_preview/
 期末汇报_PPT/ppt_assets/
