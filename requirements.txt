@@ -1,0 +1,16 @@
+# Python 3.10
+# 开发环境实测版本；如果安装失败，可以改成 >= 的版本范围。
+
+torch==2.14.0
+torchvision==0.29.0
+
+ultralytics==8.4.160
+onnx==1.22.0
+onnxruntime==1.23.2
+
+streamlit==1.65.0
+opencv-python==5.0.0
+Pillow==12.3.0
+PyYAML==6.0.3
+numpy==2.2.6
+matplotlib==3.10.9

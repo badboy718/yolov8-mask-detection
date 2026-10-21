@@ -1,0 +1,42 @@
+# ---------- 数据集 ----------
+data/
+dataset/
+dataset.zip
+
+# ---------- 训练输出 ----------
+runs/
+step4_tuning/exp1_lr001_sgd/
+step4_tuning/exp2_lr0001_sgd/
+step4_tuning/exp3_no_mosaic/
+step4_tuning/tuning_results.zip
+
+# ---------- 预训练权重 ----------
+yolov8n.pt
+
+# 最终模型保留；实验过程权重不传
+step4_tuning/*/weights/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---------- Node / PPT 生成脚本 ----------
+node_modules/
+npm-debug.log*
+package.json
+package-lock.json
+
+# ---------- PPT 临时文件与旧版 ----------
+~$*.pptx
+期末汇报_PPT/旧版/
+期末汇报_PPT/ppt_assets/
+期末汇报_PPT/generate_ppt_assets.py
+期末汇报_PPT/generate_pptx_dark.js
+ppt_review/
+
+# ---------- 系统文件 ----------
+.DS_Store
+Thumbs.db
