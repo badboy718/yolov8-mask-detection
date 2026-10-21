@@ -50,17 +50,17 @@ yolo_v8_project/
 ├── step4_tuning/
 │   ├── colab_tuning.py
 │   ├── compare_experiments.py
-│   └── best.pt                  # 调参后的最优权重
+│   ├── best.pt                  # 调参后的最优权重
+│   └── best.onnx                # 导出的 ONNX 模型
 ├── step5_deploy/
 │   ├── deploy_and_evaluate.py
 ├── step6_web_demo/
 │   └── app.py
 │
-├── data/                        # 数据集目录，仓库不包含
+├── data/dataset/                # 划分后的数据集（仓库已包含）
+├── runs/detect/train/           # 本地训练结果（仓库已包含）
 └── 期末汇报_PPT/
-    ├── 期末汇报_刘淏荣_姜瑞洋.pptx
-    ├── 答辩发言稿_口语版.md
-    └── 答辩QA_预测问题.md
+    └── 期末汇报_刘淏荣_姜瑞洋.pptx
 ```
 
 ## 环境
@@ -81,7 +81,9 @@ pip install ultralytics streamlit pillow
 
 ### 1. 准备数据
 
-从 Kaggle 下载 Face Mask Detection 数据集，把原始图片和标签放到：
+仓库已经包含划分后的 `data/dataset/`，可以直接训练和运行网页演示。
+
+如果要从原始数据重新划分，从 Kaggle 下载 Face Mask Detection 数据集，把原始图片和标签放到：
 
 ```text
 data/archive/
@@ -93,7 +95,7 @@ data/archive/
 python step2_dataset/prepare_dataset.py
 ```
 
-脚本会生成：
+脚本会重新生成：
 
 ```text
 data/dataset/
@@ -140,13 +142,13 @@ Windows 也可以直接双击 `run_demo.bat`。
 
 ## 数据和权重说明
 
-仓库没有上传完整数据集，原因有两个：数据集体积较大，且原始数据有独立的下载来源。
+仓库包含划分后的 `data/dataset/`、本地训练结果 `runs/detect/train/`，以及 `best.pt` 和 `best.onnx`，老师可以直接查看数据和结果，也可以直接运行网页演示。
 
-仓库保留了 `step4_tuning/best.pt`，方便直接运行网页演示。ONNX 模型不上传，需要时运行 `step5_deploy/deploy_and_evaluate.py` 重新导出。`yolov8n.pt` 会在训练时由 Ultralytics 自动下载，也可以手动放到项目根目录。
+原始压缩包 `dataset.zip` 和 `data/archive/` 没有上传，避免同一批图片重复三份。`yolov8n.pt` 会在训练时由 Ultralytics 自动下载，也可以手动放到项目根目录。
 
 ## 汇报材料
 
-最终版 PPT、逐页发言稿和答辩 Q&A 都在 `期末汇报_PPT/` 目录。旧版和素材不上传。
+最终版 PPT 在 `期末汇报_PPT/` 目录。旧版、预览 PDF、素材、发言稿和 Q&A 不上传。
 
 ## 已知不足
 

@@ -1,10 +1,10 @@
 # ---------- 数据集 ----------
-data/
-dataset/
+# 原始归档和重复数据不上传；划分后的 data/dataset 上传
+data/archive/
+/dataset/
 dataset.zip
 
 # ---------- 训练输出 ----------
-runs/
 step4_tuning/exp1_lr001_sgd/
 step4_tuning/exp2_lr0001_sgd/
 step4_tuning/exp3_no_mosaic/
@@ -32,6 +32,7 @@ package-lock.json
 # ---------- PPT 临时文件与旧版 ----------
 ~$*.pptx
 期末汇报_PPT/旧版/
+期末汇报_PPT/_preview/
 期末汇报_PPT/ppt_assets/
 期末汇报_PPT/generate_ppt_assets.py
 期末汇报_PPT/generate_pptx_dark.js
@@ -47,7 +48,8 @@ Thumbs.db
 # ---------- 仓库精简：不上传的过程材料 ----------
 step4_tuning/picture/
 step5_deploy/output/
-step4_tuning/best.onnx
 提交说明.md
 期末汇报_PPT/README.txt
 期末汇报_PPT/期末汇报_刘淏荣_姜瑞洋_预览.pdf
+期末汇报_PPT/答辩发言稿_口语版.md
+期末汇报_PPT/答辩QA_预测问题.md
