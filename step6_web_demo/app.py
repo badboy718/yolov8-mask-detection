@@ -9,9 +9,13 @@
 #   它把网页界面简化成 Python 函数调用（st.image / st.slider / st.columns ...），
 #   不需要写 HTML / CSS / JavaScript，几十行代码就能做出可交互的演示页面。
 #
-# 运行方式（在项目根目录执行）：
+# 运行方式（必须先进入项目根目录，也就是包含 step1~step6 的 yolo_v8_project 文件夹）：
+#   cd <项目路径>\yolo_v8_project
 #   streamlit run step6_web_demo/app.py
 #   运行后浏览器会自动打开 http://localhost:8501
+#
+# 注意：不要在上一级 Python_study 目录直接执行，
+#       否则会报 File does not exist: step6_web_demo\app.py。
 #
 # 停止运行：在终端按 Ctrl + C
 #

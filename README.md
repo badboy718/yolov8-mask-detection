@@ -134,11 +134,14 @@ python step5_deploy/deploy_and_evaluate.py
 
 ### 5. 网页演示
 
+先进入项目根目录（包含 `step1_env_setup` ~ `step6_web_demo` 的 `yolo_v8_project` 文件夹），再执行：
+
 ```bash
-python -m streamlit run step6_web_demo/app.py
+cd <你的路径>/yolo_v8_project
+streamlit run step6_web_demo/app.py
 ```
 
-Windows 也可以直接双击 `run_demo.bat`。
+如果提示 `File does not exist: step6_web_demo\app.py`，说明终端还在上一级目录，`cd` 到项目根目录即可。Windows 也可以直接双击 `run_demo.bat`。
 
 ## 数据和权重说明
 
